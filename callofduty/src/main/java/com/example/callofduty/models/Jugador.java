@@ -3,11 +3,12 @@ package com.example.callofduty.models;
 public class Jugador {
     private int id;
     private String nickname;
-    private Arma arma;
+    private String arma;
 
-    public Jugador (String nickname, Arma arma) {
-        this.nickname = nickname;
-        this.arma = arma;
+    public Jugador (int id, String nickname, String arma) {
+       this.id = id;
+       this.nickname = nickname;
+       this.arma = arma;
     }
 
     public int getId() {
@@ -24,6 +25,14 @@ public class Jugador {
 
     public void setNickname(String nickname) {
         this.nickname = nickname;
+    }
+
+    public String getArma() {
+        return arma;
+    }
+
+    public void setArma(String arma) {
+        this.arma = arma;
     }
 
     @Override
