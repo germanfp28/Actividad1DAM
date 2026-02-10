@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.callofduty.controllers.PartidaController">
+    <ComboBox fx:id="cmbJugador" />
+    <TextField fx:id="txtBajas" promptText="Bajas" />
+    <TextField fx:id="txtMuertes" promptText="Muertes" />
+    <Button text="Registrar partida" onAction="#insertarPartida" />
+    <TableView fx:id="tabla">
+        <columns>
+            <TableColumn fx:id="colJugador" text="Jugador" />
+            <TableColumn fx:id="colArma" text="Arma" />
+            <TableColumn fx:id="colBajas" text="Bajas" />
+            <TableColumn fx:id="colMuertes" text="Muertes" />
+        </columns>
+    </TableView>
+</VBox>
