@@ -14,4 +14,5 @@ public class ArmaDao {
         ps.setString(1,nombre);
         ps.executeUpdate();
     }
+
 }
