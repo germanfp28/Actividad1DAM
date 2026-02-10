@@ -5,8 +5,8 @@ public class Arma {
     private String nombre;
 
     public Arma(int id, String nombre){
-        setId(id);
-        setNombre(nombre);
+        this.id = id;
+        this.nombre = nombre;
     }
 
     public int getId() {

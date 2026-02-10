@@ -11,11 +11,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PartidaDao {
-    public static void  CreaciondePartida(String jugador,int baja,int muerte)throws SQLException{
-    String sql= "INSERT INTO partida(jugador,baja,muerte) VALUES (?,?,?)";
+    public static void  CreaciondePartida(int idJugador,int baja,int muerte)throws SQLException{
+    String sql= "INSERT INTO partida(id_jugador,baja,muerte) VALUES (?,?,?)";
     Connection con= ConexionBD.getConexion();
     PreparedStatement ps=con.prepareStatement(sql);
-    ps.setString(1,jugador);
+    ps.setInt(1,idJugador);
     ps.setInt(2,baja);
     ps.setInt(3,muerte);
     ps.executeUpdate();
