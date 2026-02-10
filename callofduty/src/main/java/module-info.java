@@ -8,6 +8,7 @@ module com.example.callofduty {
     requires net.synedra.validatorfx;
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
+    requires java.sql;
 
     opens com.example.callofduty to javafx.fxml;
     exports com.example.callofduty;
