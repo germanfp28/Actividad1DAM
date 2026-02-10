@@ -9,6 +9,7 @@ module com.example.callofduty {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires java.sql;
+    requires com.example.callofduty;
 
     opens com.example.callofduty to javafx.fxml;
     exports com.example.callofduty;
