@@ -2,11 +2,11 @@ package com.example.callofduty.models;
 
 public class Partida {
     private String jugador;
-    private int id;
+    private String arma;
     private int baja;
     private int muerte;
 
-    public Partida(String jugador,int baja,int muerte){
+    public Partida(String jugador,String arma,int baja,int muerte){
         setJugador(jugador);
         setBaja(baja);
         setMuerte(muerte);
@@ -18,10 +18,6 @@ public class Partida {
 
     public void setJugador(String jugador) {
         this.jugador = jugador;
-    }
-
-    public int getId() {
-        return id;
     }
 
     public int getBaja() {
