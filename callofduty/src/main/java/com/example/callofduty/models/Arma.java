@@ -4,7 +4,8 @@ public class Arma {
     private int id;
     private String nombre;
 
-    public Arma(String nombre){
+    public Arma(int id, String nombre){
+        setId(id);
         setNombre(nombre);
     }
 
@@ -26,8 +27,6 @@ public class Arma {
 
     @Override
     public String toString() {
-        return "Arma{" +
-                "nombre='" + nombre + '\'' +
-                '}';
+        return nombre;
     }
 }
